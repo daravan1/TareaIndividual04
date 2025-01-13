@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - FloraLens</title>
+    <link rel="stylesheet" href="login.component.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Columna izquierda con mensaje -->
+        <div class="welcome-message">
+            <h1>Bienvenido a FloraLens</h1>
+            <p>Explora el mundo de las plantas, conoce sus especies y estado de conservación.</p>
+        </div>
+
+        <!-- Columna derecha con el formulario de inicio de sesión -->
+        <div class="login-box">
+            <h2>Iniciar Sesión</h2>
+
+            <!-- Formulario de Inicio de Sesión con Angular -->
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <!-- Campo para el correo electrónico -->
+                <div class="input-group" [ngClass]="{'input-error': loginForm.get('email').invalid && loginForm.get('email').touched}">
+                    <input type="email" formControlName="email" required placeholder="Correo Electrónico" class="input-field">
+                    <span class="input-icon">&#x1F4E7;</span>
+                </div>
+
+                <!-- Campo para la contraseña -->
+                <div class="input-group" [ngClass]="{'input-error': loginForm.get('password').invalid && loginForm.get('password').touched}">
+                    <input type="password" formControlName="password" required placeholder="Contraseña" class="input-field">
+                    <span class="input-icon">&#x1F512;</span>
+                </div>
+
+                <!-- Botón de envío -->
+                <button type="submit" class="login-btn" [disabled]="loginForm.invalid">Entrar</button>
+
+                <!-- Mensaje de error si la autenticación falla -->
+                <div *ngIf="loginFailed" class="error-message">Correo o contraseña incorrectos</div>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.ts"></script>
+</body>
+</html>

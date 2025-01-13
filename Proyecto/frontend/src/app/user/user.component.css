@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet');
+/* Estilo general */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Encabezado */
+header {
+    background-color: #96AD4A;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Título de sección */
+.title-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-bottom: 2px solid #c8e6c9;
+}
+
+.title-section h1 {
+    color: #96AD4A;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.title-section img {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Tabla */
+.user-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-table th, .user-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.user-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.user-table td button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.table-section h2{
+    text-align: center;
+    color: #000000;
+
+}
+
+.user-table td button:hover {
+    background-color: #45a049;
+}
+
+/* Botones de acciones */
+.actions {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.actions .add-button, .actions .logout-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.actions .add-button:hover, .actions .logout-button:hover {
+    background-color: #45a049;
+}
+
+/* Pie de página */
+footer {
+    background-color: #198B3B;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.menuAbajo{
+  width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+footer div {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+
+    .user-table, .title-section img {
+        width: 100%;
+    }
+
+    .actions button {
+        width: 80%;
+        margin: 10px auto;
+    }
+}

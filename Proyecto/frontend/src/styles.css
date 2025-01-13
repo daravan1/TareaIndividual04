@@ -1,0 +1,207 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fondo general */
+body {
+    background-image: url('C:/Users/Usuario/Desktop/Proyecto - Copy/Proyecto - Copy/frontend/src/assets/foto.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo común para el logo */
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 150px; /* Ajusta el tamaño del logo */
+    margin-bottom: 20px;
+}
+
+/* Estilos para el login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilos del Formulario */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #3a7bd5;
+}
+
+.input-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 18px;
+    color: #888;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #96AD4A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #5b7809;
+}
+
+/* Estilos del Mensaje de Error */
+.error-message {
+    display: none;
+    text-align: center;
+    margin-top: 15px;
+    color: #ff4c4c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Estilos para el Panel de Admin y Usuario */
+.admin-body, .user-body {
+    background-image: url('C:/Users/Usuario/Desktop/Proyecto - Copy/Proyecto - Copy/frontend/src/assets/foto.png'); /* Fondo semi-transparente para el admin y usuario */
+    padding: 20px;
+}
+
+.admin-container, .user-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.admin-box, .user-box {
+    background: #fff;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.admin-box h2, .user-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.welcome-text {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #96AD4A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;/* Fondo general */
+body {
+    background-image: url('C:/Users/Usuario/Desktop/Proyecto - Copy/Proyecto - Copy/frontend/src/assets/foto.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh; /* Cambiado de height a min-height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Previene desbordes visibles */
+}
+
+/* Estilo común para el logo */
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 150px; /* Ajusta el tamaño del logo */
+    margin-bottom: 20px;
+}
+
+/* Estilos para el login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden; /* Evitar que el contenido se desborde */
+}
+
+/* Estilo del contenedor de la caja de login */
+.login-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden; /* Evitar desbordes */
+}
+
+/* Otros estilos... */
+
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #5b7809;
+}
